@@ -1,7 +1,3 @@
-Data Track
+Data Track is a 3-month, project based course that will teach you the practical technicals skills needed to manipulate, analyze, and visualize raw data from complex datasets to tackle real world problems.
 
-This track is an introduction to how to use relational databases in business analysis. You will learn how relational databases work, and how to use entity-relationship diagrams to display the structure of the data held within them.
-
-You will also learn how to execute the most useful query and table aggregation statements for business analysts, and practice using them with real databases. No more waiting 48 hours for someone else in the company to provide data to you – you will be able to get the data by yourself!
-
-Week One - mysql basics
+Each section is comprised of two weeks. (ex: Section 1=Week 1&2, Section 2=Week 3&4) with each section building upon the previous section.
