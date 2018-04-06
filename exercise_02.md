@@ -1,0 +1,72 @@
+Use the `oscar_nominees` table in Mode to complete the follow 12 questions.
+
+#Question 1
+What was the total amount of money raised by each investor in Japan?
+Task 1: Only pull 2013 and 2014 data.
+Task 2: Order year from oldest to most recent and total amount of money raised from largest to smallest.
+Task3: Do not show NULLS.
+
+#Question 2
+What's Y Combinator's average and total investment size as well as the total number of issued investments?
+Task1: Order average investment from largest to smallest. 
+Task2: Do not show NULLS.
+
+#Question 3
+For investors in the category code 'travel' and 'ecommerce', what was their total investment size for each month as one whole group? 
+Task1: Only pull companies that are operating' or have been 'acquired.
+Task2: Order month from oldest to most recent.
+
+#Question 4
+What was 23andMe's total funding in each funding round: series-a, series-b, and series-c+.
+Task1: Only show investments that came from CA.
+Task2: Order by alphabetical order.
+
+#Question 5
+What companies were Googles most expensive acquisitions?
+Task1: Only show three companies.
+Task2: Order from the most recent acquisition to the oldest.
+Task3: Do not show NULLS.
+
+#Question 6
+What investor has the highest count of failed companies?
+Task1: Show the total count of investments as well.
+Task2: Show five investors.
+Task3: Do not show NULLS.
+
+#Question 7
+What was the best month to get acquired in 2013 for companies founded in 2010?
+Task1: Order month from most recent to oldest.
+Task2: Do not show NULLS.
+
+#Question 8
+What is the total sum of funding within each bucket in the USA?
+Task1: Organize raised_amount_usd into small, medium, and large buckets.
+Hint: $0 to $10 = extra small.
+Task2: Order the count from smallest to largest.
+
+#Question 9
+What country invested the most in education?
+Task1: Show sum, avg, and count.
+Task2: Only select companies that were founded after 2008.
+Task3: Order the total sum from largest to smallest.
+Task4: Only show 10 companies.
+Task5: Do not show NULLS.
+
+#Question 10
+What was yahoo's last company they invested in and then acquired?
+
+#Question 11
+If you founded a company outside the USA, in 2010 or later, what cities are raising the largest sums of investment in?
+Task1: The company needs to have the status operating.
+Task2: Organize by largest sums of investments to smallest.
+Task3: Show 20 cities.
+Task4: The raised_amount has to be equal to or greater than $500,000.
+
+#Question 12
+What are the different categories of funding_round_types?
+Task1: Show only one column.
+Task2: Do not show NULLS and 'other'.
+Task3: Sort by alphabetical order.
+
+
+
