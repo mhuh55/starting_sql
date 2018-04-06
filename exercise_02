@@ -1,4 +1,4 @@
-Use the `oscar_nominees` table in Mode to complete the follow 12 questions.
+Use `tutorial.crunchbase_acquisitions`,'tutorial.crunchbase_investments', and 'tutorial.crunchbase_companies' tables in Mode to complete the following 12 questions.
 
 #Question 1
 What was the total amount of money raised by each investor in Japan?
