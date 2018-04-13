@@ -1,7 +1,7 @@
-Use the `oscar_nominees` table in Mode to complete the follow 12 questions.
+Use the `oscar_nominees` table in Mode to complete the follow 12 questions. 
 
 #Question 1
-What movies were made before 1990?
+What movies were made before 1990?              --beautiful
 
 Task 1: Order from smallest id to largest.
 SELECT *
