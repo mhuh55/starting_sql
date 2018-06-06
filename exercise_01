@@ -1,10 +1,10 @@
 Use the `oscar_nominees` table in Mode to complete the following 12 questions.
 
 #Question 1
-What movies were made before 1990?
+What movies were made before 1990?                          
 
 SELECT *
-  FROM tutorial.oscar_nominees 
+  FROM tutorial.oscar_nominees                                    --dope!
   WHERE year < 1990
 
 Task 1: Order from smallest id to largest.
@@ -15,7 +15,7 @@ SELECT *
 
 
 #Question 2
-What movies were made from 2000 to today?
+What movies were made from 2000 to today?                         --superb!
 
 SELECT *
   FROM tutorial.oscar_nominees 
@@ -28,7 +28,7 @@ SELECT *
   ORDER BY year ASC
   
 #Question 3
-Restrict the number of rows in your output to 20 after id: 50.
+Restrict the number of rows in your output to 20 after id: 50.            --this one was tough, good stuff
 
 SELECT *
   FROM tutorial.oscar_nominees 
@@ -50,7 +50,7 @@ SELECT movie,
 ORDER BY year ASC
 
 #Question 4
-What actor had a leading role in Hotel Rwanda? 
+What actor had a leading role in Hotel Rwanda?                                --dope!
 
 SELECT *
   FROM tutorial.oscar_nominees 
@@ -66,15 +66,15 @@ SELECT id,
   FROM tutorial.oscar_nominees 
 
 #Question 5
-Which film and year was Marlon Brandos last Oscar win? 
+Which film and year was Marlon Brandos last Oscar win?          --close, he won two times so this query could have pulled either one even with the limit. Ordering by the year even if it is not listed in the select statement should get the answer.
 
-SELECT year, 
-       winner, 
+SELECT year,   
+       winner,                                                         
        nominee, 
        movie
   FROM tutorial.oscar_nominees 
   WHERE nominee ILIKE 'Marlon%'
-  AND winner = true
+  AND winner = true                                           --ORDER BY year DESC LIMIT 1
 
 Task 1: Pull only one row.
 
@@ -83,7 +83,7 @@ SELECT *
   LIMIT 1
 
 #Question 6
-Which nominees, whos name starts with the letter "R" have movies before 1979?
+Which nominees, whos name starts with the letter "R" have movies before 1979?             --this is good i think we just forgot to add the year and the search syntax
 
 SELECT category, 
        nominee, 
@@ -111,7 +111,7 @@ SELECT year,
 #Question 7
 Find all nominees who did not win an Oscar in the category 'actor in a leading role' and 'actress in a leading role' before 1993.
 
-SELECT *
+SELECT *                                                          --sexy!one thing i would do is use IN such as IN('actor in a leading role','actress in a leading role') statement as we move towards more tables and our database as it will result in better perforance and prevent the possibilitiy of pulling data that has a similar value / bad ex:"in a leading role" can have "actor in a leading role", "actress in a leading role", "dog in a leading role" and we may believe its just the first two. lol 
   FROM tutorial.oscar_nominees 
   WHERE category ILIKE '% in a leading role'
   AND year < 1993
@@ -135,7 +135,7 @@ SELECT *
   ORDER BY id DESC
 
 #Question 8
-Which movie starts with "T" and ends with "c" and whose nominee fills out this criteria 'K_t_ _%' and the movie is between 1960 and 1998?
+Which movie starts with "T" and ends with "c" and whose nominee fills out this criteria 'K_t_ _%' and the movie is between 1960 and 1998?          --sexy!!
 
 SELECT movie, 
        year, 
@@ -146,7 +146,7 @@ SELECT movie,
    AND year BETWEEN 1960 AND 1998
 
 #Question 9
-Who were the nominee winners from 2000 to 2005 in the category, 'actor in a leading role' and 'actress in a leading role'?
+Who were the nominee winners from 2000 to 2005 in the category, 'actor in a leading role' and 'actress in a leading role'?    --dope!! same here with "like" if you have the exact value you are looking for use that instead of like.
 
 SELECT *
   FROM tutorial.oscar_nominees 
@@ -155,7 +155,7 @@ SELECT *
    AND winner = 'true'
 
 #Question 10
-Who won an oscar between Tom Hanks and Nicolas Cage in the years 1990, 1999, and 1993? 
+Who won an oscar between Tom Hanks and Nicolas Cage in the years 1990, 1999, and 1993? --bueno, great use of IN just needed to find who won by putting a winner = 'True'
 
 SELECT *
   FROM tutorial.oscar_nominees 
@@ -174,7 +174,7 @@ SELECT *
 
 Task 1: Do not include years 2003 and 2007.
 
-SELECT *
+SELECT *                                                      --awesome man! 
   FROM tutorial.oscar_nominees 
   WHERE nominee LIKE 'S%'
    AND category LIKE '% in a leading role'
@@ -186,7 +186,7 @@ SELECT *
 #Question 12
 Display year, category, nominee, and movie columns only. Order year from oldest to youngest and nominees from z to a. Only select movies from 1950,1960,1970,1980, and 1990.
 
-SELECT year,
+SELECT year,                                                 -- Sexy, i was hoping to throw u off with those order bys lol
        category, 
        nominee, 
        movie
